@@ -1,0 +1,28 @@
+.basic {
+    height: 100vh;
+    position: relative;
+    padding: auto auto;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, .3)), url(../assets/img/bg.jpg);
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.main__container {
+    width: 80%;
+    position: absolute;
+    top: 25%;    
+    left: 20%;
+    
+}
+
+.h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.searchbar__container {
+    width: 75%;
+    margin: 0 auto;
+    position: absolute;
+}

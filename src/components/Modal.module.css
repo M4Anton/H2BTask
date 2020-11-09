@@ -1,0 +1,79 @@
+.modal {
+  z-index: 100;
+  background: #fff;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  width: 60vw;
+  padding: .5rem 1.3rem;
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .modal__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+  }
+  
+  
+  .modal__fooder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  
+  .modal__close {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+    color: #000;
+    opacity: .3;
+    cursor: pointer;
+    border: none;
+  }
+
+  .modal__layout {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .pinIcon::before {
+      content: "📍";
+      font-style: normal;
+  }
+
+.profile__container {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.profile__shape_md {
+  margin: 0 1rem;
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}

@@ -1,0 +1,16 @@
+.container {
+    cursor: pointer;
+    background-color: #eee;
+    color: #666;
+    padding: .2rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px;
+    margin: .2rem;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.container:hover {
+    transform: scale(1.07);
+}

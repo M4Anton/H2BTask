@@ -1,0 +1,9 @@
+.card__container {
+    transition: all .3s ease-out;
+}
+
+.card__container:hover {
+    transform: scale(1);
+    -webkit-filter: blur(3px) brightness(80%);
+    filter: blur(3px) brightness(80%);
+}

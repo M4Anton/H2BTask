@@ -1,0 +1,47 @@
+/* SEARCHBOX STYLES */
+.searchbox__container {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    font-size: 1.6rem;
+    overflow: hidden;
+    
+}
+
+.searchbox__input {
+    border-radius: .4rem;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    background-color: #eee;
+}
+
+.searchbox__container .magnifier::before {
+    content: '🔎';
+    position: absolute;
+    left: 1rem;
+    top: .7rem;
+}
+
+.simple {
+    background-color: #eee;
+}
+
+/* CLEAR/DELETE BUTTONS */
+
+.clear::before {
+    content: "\2715";
+    width: .5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .7rem;
+    color: #000;
+    z-index: 1000;
+    transition: all .2s;
+    backface-visibility: hidden;
+}
+
+.clear:hover:before {
+    transform: scale(1.2);
+}

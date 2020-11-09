@@ -1,0 +1,61 @@
+.suggestion__container .magnifier::before {
+    content: '🔎';
+    position: absolute;
+    top: 0;
+    left: .75rem;
+}
+
+.suggestion__container {
+    position: relative;
+    z-index: 100000;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #eee;
+    border-radius: .2rem;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+
+.suggestion__item {
+    position: relative;
+}
+.suggestion__text {
+    padding-left: 3rem;
+    cursor: pointer;
+}
+.suggestion__item:hover {
+    background-color: rgba(0,0,0, .15);
+}
+
+/* DELETE STYLES */
+
+
+.delete::before {
+    content: "\2715";
+    width: .5rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    z-index: 1000;
+    color: #000;
+    cursor: pointer;
+    transition: all .2s;
+    backface-visibility: hidden;
+}
+
+.deleteHistory {
+    float: right;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all .2s;
+    backface-visibility: hidden;
+}
+
+.deleteHistory:hover {
+    color: royalblue;
+}
+
+.delete:hover:before {
+    transform: scale(1.2);
+}
